@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../components/Images/fondoLogin.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.principalContainer{
+    background: rgba(245, 222, 179, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.formLogin {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin: 0 auto; /* Centrar el formulario en la pantalla */
+}
+
+.formLogin h1 {
+    font-size: 34px;
+    text-align: center;
+}
+
+.formLogin h2 {
+    font-size: 19px;
+    text-align: center;
+    height: 40px;
+}
+
+.formLogin .inputMail,
+.formLogin .inputPassword {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 50px 0;
+    font-weight: bolder;
+}
+
+.labelMail{
+    display: flex;
+    text-align: right;
+}
+
+.labelPassword{
+    display: flex;
+    text-align: right;
+}
+
+.inputMail input,
+.inputPassword input {
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 3%;
+    color: #000;
+}
+
+.inputMail .icon,
+.inputPassword .icon2 {
+    position: absolute;
+    top: 120%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #000;
+}
+
+.formLogin button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #272973;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.formLogin .registerOpcion,
+.formLogin .opcionAdmin,
+.formLogin .opcionRecepcionista {
+    font-size: 16px;
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+
+
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .formLogin {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .formLogin {
+        width: 90%;
+        padding: 20px 30px;
+    }
+
+    .inputMail .icon,
+    .inputPassword .icon2 {
+        font-size: 20px;
+    }
+
+    .formLogin button {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formLogin {
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    .formLogin h1 {
+        font-size: 28px;
+    }
+
+    .formLogin h2 {
+        font-size: 16px;
+        height: auto;
+    }
+
+    .inputMail .icon,
+    .inputPassword .icon2 {
+        font-size: 18px;
+    }
+
+    .formLogin button {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
